@@ -1,4 +1,4 @@
-# Public: Install spectacle.app into /Applications.
+# Public: Install Spectacle.app into /Applications.
 #
 # Examples
 #
@@ -6,8 +6,8 @@
 class spectacle (
   $version = $spectacle::version
 ){
-  package { 'spectacle':
+  package { 'Spectacle':
     provider => 'compressed_app',
-    source   => 'https://s3.amazonaws.com/spectacle/downloads/Spectacle+${version}.zip'
+    source   => "https://s3.amazonaws.com/spectacle/downloads/Spectacle+${version}.zip"
   }
 }
